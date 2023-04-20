@@ -8,7 +8,7 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import cpp from "../assets/cpp.png";
 import java from "../assets/java.png";
-import matlab from "../assets/matlab.png";
+import python from "../assets/python.png";
 
 const Skill = () => {
   const techs = [
@@ -62,8 +62,8 @@ const Skill = () => {
     },
     {
       id: 9,
-      src: matlab,
-      title: "Matlab",
+      src: python,
+      title: "Python",
       style: "shadow-red-800",
     },
   ];
