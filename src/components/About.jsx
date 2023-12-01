@@ -38,13 +38,6 @@ const About = () => {
           </p>
 
           <p className="text-xl mt-5">
-            In my free time, I enjoy exploring new technologies and contributing
-            to open-source projects. I'm also passionate about sharing my
-            knowledge with others and enjoy mentoring junior developers and
-            participating in online communities.
-          </p>
-
-          <p className="text-xl mt-5">
             Thank you for taking the time to learn more about me, and I look
             forward to the opportunity to work with you on your next project!
           </p>

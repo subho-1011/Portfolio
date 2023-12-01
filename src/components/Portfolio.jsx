@@ -1,37 +1,43 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import toDo from "../assets/portfolio/todo.png";
+import netflixClone from "../assets/portfolio/netflixClone.png";
+import portfolio from "../assets/portfolio/portfolio.png"
+import petZee from "../assets/portfolio/petZee.jpg"
+import algoVisualizer from '../assets/portfolio/algoVisualizer.png'
 
 const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct,
+            src: toDo,
+            demo: "#",
+            code: "https://github.com/subho-1011/Todo-App",
         },
         {
             id: 2,
-            src: reactParallax,
+            src: netflixClone,
+            demo: "https://netflix-clone-4ac7b.web.app/",
+            code: "https://github.com/subho-1011/Netflix_Clone",
         },
         {
             id: 3,
-            src: navbar,
+            src: portfolio,
+            demo: "https://portfolio-subho.web.app/",
+            code: "https://github.com/subho-1011/Portfolio",
         },
         {
             id: 4,
-            src: reactSmooth,
+            src: petZee,
+            demo: "https://petzee.pikselas.repl.co/Portfolio%20Page/portfolio.html",
+            code: "https://github.com/subho-1011/Project-PetZee",
         },
         {
             id: 5,
-            src: installNode,
+            src: algoVisualizer,
+            
+            code: "https://github.com/subho-1011/Algorithm-Visualizer",
         },
-        {
-            id: 6,
-            src: reactWeather,
-        },
+        
     ];
 
     return (
@@ -48,19 +54,19 @@ const Portfolio = () => {
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                    {portfolios.map(({ id, src }) => (
-                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                    {portfolios.map((portfolio) => (
+                        <div key={portfolio.id} className="shadow-md shadow-gray-600 rounded-lg">
                             <img
-                                src={src}
+                                src={portfolio.src}
                                 alt=""
                                 className="rounded-md duration-200 hover:scale-105"
                             />
                             <div className="flex items-center justify-center">
+                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                                        <a href={portfolio.demo}>Demo</a>
+                                    </button>
                                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                                    Demo
-                                </button>
-                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                                    Code
+                                    <a href={portfolio.code}>Code</a>
                                 </button>
                             </div>
                         </div>
