@@ -34,7 +34,7 @@ const Portfolio = () => {
         {
             id: 5,
             src: algoVisualizer,
-            
+            demo: "#",
             code: "https://github.com/subho-1011/Algorithm-Visualizer",
         },
         
