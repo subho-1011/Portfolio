@@ -41,7 +41,7 @@ const SocialLinks = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '',
+            href: 'https://github.com/subho-1011/Portfolio/blob/main/src/assets/resume/Resume.pdf',
             style: 'round-tr-md',
             download: true,
         },
