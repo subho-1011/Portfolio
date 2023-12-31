@@ -7,7 +7,7 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import cpp from "../assets/cpp.png";
-import java from "../assets/java.png";
+import mysql from "../assets/mysql.png";
 import python from "../assets/python.png";
 
 const Skill = () => {
@@ -56,8 +56,8 @@ const Skill = () => {
     },
     {
       id: 8,
-      src: java,
-      title: "Java",
+      src: mysql,
+      title: "MySQL",
       style: "shadow-red-500",
     },
     {
